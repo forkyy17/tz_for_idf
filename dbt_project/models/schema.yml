@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: people_in_space_aggregated
+    description: "Count of by craft"
+    columns:
+      - name: craft
+        tests:
+          - not_null
+          - unique
+      - name: people_count
+        tests:
+          - not_null

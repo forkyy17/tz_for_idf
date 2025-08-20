@@ -1,0 +1,10 @@
+name: tz_project
+version: 1.0.0
+profile: clickhouse
+model-paths: ["models"]
+
+models:
+  tz_project:
+    +materialized: table
+    +database: default
+    +schema: default

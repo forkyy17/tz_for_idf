@@ -1,0 +1,310 @@
+[0m13:43:22.719347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10652f260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a07440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a071a0>]}
+
+
+============================== 13:43:22.722269 | 8c5b5176-d541-4b94-a03d-1d84e7442958 ==============================
+[0m13:43:22.722269 [info ] [MainThread]: Running with dbt=1.5.11
+[0m13:43:22.722607 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/timofejvila/Desktop/tz_idf/dbt_project/logs', 'version_check': 'True', 'profiles_dir': '/Users/timofejvila/desktop/tz_idf/dbt_project', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m13:43:22.755243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c5b5176-d541-4b94-a03d-1d84e7442958', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067e3b90>]}
+[0m13:43:22.762513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c5b5176-d541-4b94-a03d-1d84e7442958', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a04860>]}
+[0m13:43:22.763117 [info ] [MainThread]: Registered adapter: clickhouse=1.5.2
+[0m13:43:22.773205 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m13:43:22.773708 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:43:22.773905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8c5b5176-d541-4b94-a03d-1d84e7442958', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069e7f20>]}
+[0m13:43:22.954653 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two macros named "materialization_table_default" in the project
+  "dbt".
+   To fix this error, rename or remove one of the following macros:
+      - macros/materializations/models/table/table.sql
+      - macros/materializations/models/table.sql
+[0m13:43:22.955080 [debug] [MainThread]: Command `dbt run` failed at 13:43:22.955013 after 0.25 seconds
+[0m13:43:22.955284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a7c650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069e7f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106aefd40>]}
+[0m13:43:22.955446 [debug] [MainThread]: Flushing usage events
+[0m13:46:37.537623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10527a690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052d2590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052d2d10>]}
+
+
+============================== 13:46:37.541074 | 3cd57568-888c-41e8-b8d0-9212a3e5826d ==============================
+[0m13:46:37.541074 [info ] [MainThread]: Running with dbt=1.7.11
+[0m13:46:37.541489 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/timofejvila/desktop/tz_idf/dbt_project', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/timofejvila/Desktop/tz_idf/dbt_project/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select people_in_space_aggregated', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:46:37.629359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3cd57568-888c-41e8-b8d0-9212a3e5826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10542d850>]}
+[0m13:46:37.665911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3cd57568-888c-41e8-b8d0-9212a3e5826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10529d190>]}
+[0m13:46:37.666594 [info ] [MainThread]: Registered adapter: clickhouse=1.7.7
+[0m13:46:37.713103 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m13:46:37.713609 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:46:37.713854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3cd57568-888c-41e8-b8d0-9212a3e5826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105506650>]}
+[0m13:46:38.261225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3cd57568-888c-41e8-b8d0-9212a3e5826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105463f90>]}
+[0m13:46:38.266266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3cd57568-888c-41e8-b8d0-9212a3e5826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10592ae90>]}
+[0m13:46:38.266481 [info ] [MainThread]: Found 1 model, 3 tests, 0 sources, 0 exposures, 0 metrics, 429 macros, 0 groups, 0 semantic models
+[0m13:46:38.266644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cd57568-888c-41e8-b8d0-9212a3e5826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054f2250>]}
+[0m13:46:38.267299 [info ] [MainThread]: 
+[0m13:46:38.267671 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m13:46:38.268157 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m13:46:38.272698 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:46:38.428195 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "clickhouse", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m13:46:38.430748 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m13:46:38.432029 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now create__default_default)
+[0m13:46:38.432419 [debug] [ThreadPool]: Creating schema "schema: "default_default"
+"
+[0m13:46:38.436089 [debug] [ThreadPool]: dbt_clickhouse adapter: On create__default_default: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "clickhouse", "target_name": "dev", "connection_name": "create__default_default"} */
+create database if not exists `default_default`
+        
+  
+        
+  ...
+[0m13:46:38.439567 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m13:46:38.440959 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create__default_default, now list__default_default)
+[0m13:46:38.444769 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__default_default: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "clickhouse", "target_name": "dev", "connection_name": "list__default_default"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'default_default'
+      
+
+  ...
+[0m13:46:38.486049 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.04 seconds
+[0m13:46:38.487018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cd57568-888c-41e8-b8d0-9212a3e5826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10588d450>]}
+[0m13:46:38.487469 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:46:38.487648 [info ] [MainThread]: 
+[0m13:46:38.489060 [debug] [Thread-1 (]: Began running node model.tz_project.people_in_space_aggregated
+[0m13:46:38.489324 [info ] [Thread-1 (]: 1 of 1 START sql table model `default_default`.`people_in_space_aggregated` .... [RUN]
+[0m13:46:38.489658 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__default_default, now model.tz_project.people_in_space_aggregated)
+[0m13:46:38.489830 [debug] [Thread-1 (]: Began compiling node model.tz_project.people_in_space_aggregated
+[0m13:46:38.493000 [debug] [Thread-1 (]: Writing injected SQL for node "model.tz_project.people_in_space_aggregated"
+[0m13:46:38.493592 [debug] [Thread-1 (]: Timing info for model.tz_project.people_in_space_aggregated (compile): 13:46:38.489935 => 13:46:38.493478
+[0m13:46:38.493781 [debug] [Thread-1 (]: Began executing node model.tz_project.people_in_space_aggregated
+[0m13:46:38.503273 [debug] [Thread-1 (]: Creating new relation people_in_space_aggregated
+[0m13:46:38.516932 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.tz_project.people_in_space_aggregated: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "clickhouse", "target_name": "dev", "node_id": "model.tz_project.people_in_space_aggregated"} */
+
+            
+
+    
+        create table `default_default`.`people_in_space_aggregated`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            select 
+craft, count() as people_count
+from default.people
+group by craft
+order by people_count desc
+          )
+        ...
+[0m13:46:38.545221 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m13:46:38.550605 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.tz_project.people_in_space_aggregated: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "clickhouse", "target_name": "dev", "node_id": "model.tz_project.people_in_space_aggregated"} */
+
+    select name, type from system.columns where table = 'people_in_space_aggregated'
+    
+      and database = 'default_default'
+    
+    order by position
+  ...
+[0m13:46:38.554892 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m13:46:38.556956 [debug] [Thread-1 (]: Writing runtime sql for node "model.tz_project.people_in_space_aggregated"
+[0m13:46:38.557660 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.tz_project.people_in_space_aggregated: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "clickhouse", "target_name": "dev", "node_id": "model.tz_project.people_in_space_aggregated"} */
+
+  
+    
+    
+    
+        
+        insert into `default_default`.`people_in_space_aggregated`
+        ("craft", "people_count")select 
+craft, count() as people_count
+from default.people
+group by craft
+order by people_count desc
+  ...
+[0m13:46:38.569128 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m13:46:38.578732 [debug] [Thread-1 (]: Timing info for model.tz_project.people_in_space_aggregated (execute): 13:46:38.493882 => 13:46:38.578608
+[0m13:46:38.579183 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3cd57568-888c-41e8-b8d0-9212a3e5826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105641710>]}
+[0m13:46:38.579484 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `default_default`.`people_in_space_aggregated`  [[32mOK[0m in 0.09s]
+[0m13:46:38.579751 [debug] [Thread-1 (]: Finished running node model.tz_project.people_in_space_aggregated
+[0m13:46:38.580606 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:46:38.580785 [debug] [MainThread]: Connection 'model.tz_project.people_in_space_aggregated' was left open.
+[0m13:46:38.580931 [debug] [MainThread]: On model.tz_project.people_in_space_aggregated: Close
+[0m13:46:38.581119 [info ] [MainThread]: 
+[0m13:46:38.581275 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.31 seconds (0.31s).
+[0m13:46:38.581550 [debug] [MainThread]: Command end result
+[0m13:46:38.585827 [info ] [MainThread]: 
+[0m13:46:38.586049 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:46:38.586189 [info ] [MainThread]: 
+[0m13:46:38.586341 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m13:46:38.614050 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.1081064, "process_user_time": 1.567648, "process_kernel_time": 0.156254, "process_mem_max_rss": "121028608", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:46:38.615172 [debug] [MainThread]: Command `dbt run` succeeded at 13:46:38.614831 after 1.11 seconds
+[0m13:46:38.615827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e39950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052c1510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1007be0d0>]}
+[0m13:46:38.616446 [debug] [MainThread]: Flushing usage events
+[0m13:47:02.864397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bdb790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c462d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c46a10>]}
+
+
+============================== 13:47:02.867042 | dea5f8a8-e7e9-4996-b4b0-e77338b1f3c3 ==============================
+[0m13:47:02.867042 [info ] [MainThread]: Running with dbt=1.7.11
+[0m13:47:02.867385 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/timofejvila/desktop/tz_idf/dbt_project', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/timofejvila/Desktop/tz_idf/dbt_project/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt test --select people_in_space_aggregated', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:47:02.948255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dea5f8a8-e7e9-4996-b4b0-e77338b1f3c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106315110>]}
+[0m13:47:02.984313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dea5f8a8-e7e9-4996-b4b0-e77338b1f3c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106315110>]}
+[0m13:47:02.984886 [info ] [MainThread]: Registered adapter: clickhouse=1.7.7
+[0m13:47:02.997645 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m13:47:03.016577 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:47:03.016792 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:47:03.019808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dea5f8a8-e7e9-4996-b4b0-e77338b1f3c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e63a90>]}
+[0m13:47:03.026070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dea5f8a8-e7e9-4996-b4b0-e77338b1f3c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f04b90>]}
+[0m13:47:03.026331 [info ] [MainThread]: Found 1 model, 3 tests, 0 sources, 0 exposures, 0 metrics, 429 macros, 0 groups, 0 semantic models
+[0m13:47:03.026493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dea5f8a8-e7e9-4996-b4b0-e77338b1f3c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e2ee90>]}
+[0m13:47:03.027264 [info ] [MainThread]: 
+[0m13:47:03.027666 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m13:47:03.028199 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list__default_default'
+[0m13:47:03.033420 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:47:03.110694 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__default_default: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "clickhouse", "target_name": "dev", "connection_name": "list__default_default"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'default_default'
+      
+
+  ...
+[0m13:47:03.117898 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m13:47:03.119690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dea5f8a8-e7e9-4996-b4b0-e77338b1f3c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e81490>]}
+[0m13:47:03.120285 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:47:03.120529 [info ] [MainThread]: 
+[0m13:47:03.121980 [debug] [Thread-1 (]: Began running node test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5
+[0m13:47:03.122278 [info ] [Thread-1 (]: 1 of 3 START test not_null_people_in_space_aggregated_craft .................... [RUN]
+[0m13:47:03.122753 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__default_default, now test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5)
+[0m13:47:03.122995 [debug] [Thread-1 (]: Began compiling node test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5
+[0m13:47:03.133068 [debug] [Thread-1 (]: Writing injected SQL for node "test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5"
+[0m13:47:03.133616 [debug] [Thread-1 (]: Timing info for test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5 (compile): 13:47:03.123139 => 13:47:03.133487
+[0m13:47:03.133823 [debug] [Thread-1 (]: Began executing node test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5
+[0m13:47:03.141578 [debug] [Thread-1 (]: Writing runtime sql for node "test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5"
+[0m13:47:03.142046 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "clickhouse", "target_name": "dev", "node_id": "test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select craft
+from `default_default`.`people_in_space_aggregated`
+where craft is null
+
+
+
+    ) dbt_internal_test...
+[0m13:47:03.148134 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m13:47:03.149504 [debug] [Thread-1 (]: Timing info for test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5 (execute): 13:47:03.133940 => 13:47:03.149367
+[0m13:47:03.149994 [info ] [Thread-1 (]: 1 of 3 PASS not_null_people_in_space_aggregated_craft .......................... [[32mPASS[0m in 0.03s]
+[0m13:47:03.150297 [debug] [Thread-1 (]: Finished running node test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5
+[0m13:47:03.150525 [debug] [Thread-1 (]: Began running node test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc
+[0m13:47:03.150793 [info ] [Thread-1 (]: 2 of 3 START test not_null_people_in_space_aggregated_people_count ............. [RUN]
+[0m13:47:03.151200 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.tz_project.not_null_people_in_space_aggregated_craft.caa2033fd5, now test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc)
+[0m13:47:03.151402 [debug] [Thread-1 (]: Began compiling node test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc
+[0m13:47:03.153999 [debug] [Thread-1 (]: Writing injected SQL for node "test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc"
+[0m13:47:03.154445 [debug] [Thread-1 (]: Timing info for test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc (compile): 13:47:03.151517 => 13:47:03.154326
+[0m13:47:03.154645 [debug] [Thread-1 (]: Began executing node test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc
+[0m13:47:03.156226 [debug] [Thread-1 (]: Writing runtime sql for node "test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc"
+[0m13:47:03.156740 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "clickhouse", "target_name": "dev", "node_id": "test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select people_count
+from `default_default`.`people_in_space_aggregated`
+where people_count is null
+
+
+
+    ) dbt_internal_test...
+[0m13:47:03.160003 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m13:47:03.160868 [debug] [Thread-1 (]: Timing info for test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc (execute): 13:47:03.154762 => 13:47:03.160745
+[0m13:47:03.161337 [info ] [Thread-1 (]: 2 of 3 PASS not_null_people_in_space_aggregated_people_count ................... [[32mPASS[0m in 0.01s]
+[0m13:47:03.161632 [debug] [Thread-1 (]: Finished running node test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc
+[0m13:47:03.161855 [debug] [Thread-1 (]: Began running node test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b
+[0m13:47:03.162100 [info ] [Thread-1 (]: 3 of 3 START test unique_people_in_space_aggregated_craft ...................... [RUN]
+[0m13:47:03.162489 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.tz_project.not_null_people_in_space_aggregated_people_count.62ee3290cc, now test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b)
+[0m13:47:03.162685 [debug] [Thread-1 (]: Began compiling node test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b
+[0m13:47:03.166199 [debug] [Thread-1 (]: Writing injected SQL for node "test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b"
+[0m13:47:03.166634 [debug] [Thread-1 (]: Timing info for test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b (compile): 13:47:03.162806 => 13:47:03.166526
+[0m13:47:03.166825 [debug] [Thread-1 (]: Began executing node test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b
+[0m13:47:03.168100 [debug] [Thread-1 (]: Writing runtime sql for node "test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b"
+[0m13:47:03.168447 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "clickhouse", "target_name": "dev", "node_id": "test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    craft as unique_field,
+    count(*) as n_records
+
+from `default_default`.`people_in_space_aggregated`
+where craft is not null
+group by craft
+having count(*) > 1
+
+
+
+    ) dbt_internal_test...
+[0m13:47:03.173083 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m13:47:03.174038 [debug] [Thread-1 (]: Timing info for test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b (execute): 13:47:03.166929 => 13:47:03.173907
+[0m13:47:03.174505 [info ] [Thread-1 (]: 3 of 3 PASS unique_people_in_space_aggregated_craft ............................ [[32mPASS[0m in 0.01s]
+[0m13:47:03.174784 [debug] [Thread-1 (]: Finished running node test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b
+[0m13:47:03.175615 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:47:03.175762 [debug] [MainThread]: Connection 'test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b' was left open.
+[0m13:47:03.175902 [debug] [MainThread]: On test.tz_project.unique_people_in_space_aggregated_craft.b469ad0b9b: Close
+[0m13:47:03.176090 [info ] [MainThread]: 
+[0m13:47:03.176240 [info ] [MainThread]: Finished running 3 tests in 0 hours 0 minutes and 0.15 seconds (0.15s).
+[0m13:47:03.176639 [debug] [MainThread]: Command end result
+[0m13:47:03.181754 [info ] [MainThread]: 
+[0m13:47:03.181956 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:47:03.182102 [info ] [MainThread]: 
+[0m13:47:03.182262 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m13:47:03.183974 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.34590533, "process_user_time": 1.027096, "process_kernel_time": 0.151767, "process_mem_max_rss": "117063680", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:47:03.184234 [debug] [MainThread]: Command `dbt test` succeeded at 13:47:03.184176 after 0.35 seconds
+[0m13:47:03.184438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1023820d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1024350d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102437150>]}
+[0m13:47:03.184631 [debug] [MainThread]: Flushing usage events

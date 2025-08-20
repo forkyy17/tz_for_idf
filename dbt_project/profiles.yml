@@ -1,0 +1,13 @@
+clickhouse:
+  target: dev
+  outputs: 
+    dev:
+      type: clickhouse
+      schema: default
+      host: localhost
+      port: 8123
+      user: idftask
+      password: idftask
+      secure: False
+      verify: False
+      database: default
